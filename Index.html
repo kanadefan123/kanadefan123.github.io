@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css" >
+        <script src="main.js" defer></script>
+        <title> Classical Music </title>
+    </head>
+
+    <body>
+        <header>
+            <nav id="navbar">  <!-- NAV BAR ON TOP -->
+            <ul id="navlinks">
+                <li><button id="homebtn">Home</button></li>
+                <li><button id="erasbtn">Eras</button></li>
+                <li><button id="compbtn">Composers</button></li>
+                <li><button id="tracksbtn">Tracks</button></li>
+            </ul>
+            </nav>
+        </header>
+
+        <section class="page" id="homepage"> <!-- HOME PAGE -->
+            <h1>Classical Music 𝄞</h1>
+            <p>"Where  every <span>note</span> tells a story "</p>
+            <button id="beginbtn">  | Begin Journey | </button>
+        </section>
+            
+        <section class="page" id="eraspage"> <!-- ERAS PAGE-->
+            <h2 id="ErasH2"> Musical Eras </h2>
+            <p id = "intro"> Classical music has evolved throughout history with each era introducing it's own style of unique instruments, sounds and composers. <strong> Select an era to find out about that period and its composers. </strong></p>
+            <details class = "fact">
+            <summary> Fun Fact </summary>
+            <p>Vienna (City in Austria) is widely known as the <strong>capital of music</strong> due to it's rich musicial history and association with famous composers like mozart and beethoven. Who lived and performed there making Vienna one of the world's most influential music cities.</p> 
+            </details>
+
+        <div id = "eraslayout">
+            <div id="erasbtnsection"> <!-- ERA BUTTONS -->
+                <button class="erabtn" id="baroque">Baroque Era</button>
+                <button class="erabtn" id="classical">Classical Era</button>
+                <button class="erabtn" id="romantic">Romantic Era</button>
+                <button class="erabtn" id="modern">Modern Era</button>
+            </div>
+
+            <div id ="erascontent"> <!-- ERAS CONTENT -->
+                    <div id="baroquecontent">
+                        <img src="Images/baroque.jpg" alt="Baroque era" id="eraimage"> <!--Baroque Era-->
+                        <p> <strong>1600 - 1750 </strong></p>
+                        <p> The baroque era was known for it's complex, ornate and dramatic style of european music that was composed between 1600 - 1750, composers usually compose these pieces for high courts, churches and orchestras.</p>
+                        <h4> Famous composers during this era : </h4>
+                        <ul>
+                            <li>Johann Sebastian Bach</li>
+                            <li>George Frideric Handel </li>
+                            <li>Antonio Vivaldi</li>
+                        </ul>
+                    </div>
+                     <div id="classicalcontent"></div>
+                      <div id="romanticcontent"></div>
+                       <div id="moderncontent"></div>
+                </div>
+        </div>
+        </section>
+
+        <section class="page" id="comppage">
+            <h3> Famous Composers </h3>
+         </section>
+
+        <section class="page" id="trackspage">
+            <h3> Classical Tracks</h3>
+         </section>
+            
+
+    </body>
+</html>
