@@ -14,11 +14,11 @@ body{
     min-height: 100vh; /* make background image a screen tall so it doesn't show white blanks */
     background-attachment: fixed; /* prevents background from changing and moving with the page */
 }
-p, h1, h3,h2{
+p, h1 , h2{
     color: white; 
 }
 
-@keyframes fadein{
+@keyframes fadein{ 
     from{
         opacity:0; /* starts from nothing */
     }
