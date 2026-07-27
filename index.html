@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,user-scalable=no">
         <link rel="stylesheet" href="style.css" >
         <script src="main.js" defer></script>
         <title> Classical Music </title>
@@ -37,10 +38,11 @@
                 <button class="erabtn" id="baroque">Baroque Era</button>
                 <button class="erabtn" id="classical">Classical Era</button>
                 <button class="erabtn" id="romantic">Romantic Era</button>
-                <button class="erabtn" id="modern">Modern Era</button>
+                <button class="erabtn" id="quiz"> Quiz </button>
             </div>
 
             <div id ="erascontent"> <!-- ERAS CONTENT -->
+
                     <div id="baroquecontent">
                         <img src="Images/baroque.jpg" alt="Baroque era" id="eraimage"> <!--Baroque Era-->
                         <p> <strong>1600 - 1750 </strong></p>
@@ -52,19 +54,181 @@
                             <li>Antonio Vivaldi</li>
                         </ul>
                     </div>
-                     <div id="classicalcontent"></div>
-                      <div id="romanticcontent"></div>
-                       <div id="moderncontent"></div>
-                </div>
+                    
+                     <div id="classicalcontent">
+                        <img src="Images/classical.png" alt="Classical era" id="classicalimage">
+                        <p><strong>1750 - 1820</strong></p>
+                        <p> The classical era was known for it's more balanced and elegant melodies that was composed between 1750 to 1820. It shifted away from the highly complex baroque era, making music easier to follow. Composers now write symphonies and sonatas for the pubilc and royal courts.</p>
+                        <h4>Famous composers during this era : </h4>
+                        <ul>
+                            <li> Ludwig Van Beethoven </li>
+                            <li> Wolfgang Amadeus Mozart </li>
+                            <li> Joseph Haydn </li>
+                        </ul>
+                     </div>
+
+                      <div id="romanticcontent">
+                        <img src="Images/romantic.jpg" alt="Romantic era" id="romanticimage">
+                        <p><strong>1820 - 1900</strong></p>
+                        <p> The romantic era was more focused on expression, emotion and indiviualism. Composers wrote music that were dramatic and powerful to express feelings. Orchestras grew bigger and compositions became more challenging as it was more imaginative and expressive.</p>
+                        <h4>Famous composers during this era : </h4>
+                        <ul>
+                            <li> Frédéric Chopin </li>
+                            <li> Pyotr Ilyich Tchaikovsky </li>
+                            <li> Franz Liszt </li>
+                        </ul>
+                      </div>
+
+                      <form id="quizcontent">
+
+                        <div class = "question active"> <!--added active class to know which question is currently on and removes and adds to another question if that other question is active-->
+                            <h3 class="qnh3"> Question 1 / 5 </h3>
+                            <p>Which composer belonged to the baroque era?</p>
+                            <label><input type="radio" name="q1" value="correct">  Johann Sebastian Bach </label>
+                            <label><input type="radio" name="q1" value="wrong"> Wolfgang Amadeus Mozart</label>
+                            <label><input type="radio" name="q1" value="wrong"> Frédéric Chopin</label>
+                            <button type="button" class="nextbtn">Next</button>
+                         </div>
+                        <div class = "question"> 
+                            <h3 class="qnh3"> Question 2 / 5 </h3>
+                            <p>How long did the classical era last?</p>
+                            <label><input type="radio" name="q2" value="wrong">  1600-1750 </label>
+                            <label><input type="radio" name="q2" value="correct"> 1750-1820</label>
+                            <label><input type="radio" name="q2" value="wrong"> 1820-1900 </label>
+                            <button type="button" class="nextbtn">Next</button>
+                         </div>
+                        <div class = "question"> 
+                            <h3 class="qnh3"> Question 3 / 5 </h3>
+                            <p>Which composer belonged to the classical era?</p>
+                            <label><input type="radio" name="q3" value="wrong">Antonio Vivaldi</label>
+                            <label><input type="radio" name="q3" value="correct">Joseph Haydn</label>
+                            <label><input type="radio" name="q3" value="wrong">Franz Liszt</label>
+                            <button  type="button" class="nextbtn">Next</button>
+                         </div>
+                        <div class = "question"> 
+                            <h3 class="qnh3"> Question 4 / 5 </h3>
+                            <p>What was romantic music known for?</p>
+                            <label><input type="radio" name="q4" value="wrong">Orante and dramatic</label>
+                            <label><input type="radio" name="q4" value="wrong">Balanced and elegant</label>
+                            <label><input type="radio" name="q4" value="correct">Emotional and expressive</label>
+                            <button type="button" class="nextbtn">Next</button>
+                         </div>
+                        <div class = "question"> 
+                            <h3 class="qnh3">  Question 5 / 5 </h3>
+                            <p>Which composer belonged to the romantic era?</p>
+                            <label><input type="radio" name="q5" value="correct">Frédéric Chopin</label>
+                            <label><input type="radio" name="q5" value="wrong">Johann Sebastian Bach</label>
+                            <label><input type="radio" name="q5" value="wrong">Joseph Haydn</label>
+                            <button type="button" class="nextbtn">Finish</button>
+                         </div>
+
+                         <div id="result">
+                            <div id="confetti"></div>
+                            <h2 id="complete">Quiz complete!</h2>
+                            <p id="score"></p>
+                         </div>
+                         <button type="button" id="tryagain">Try again</button>
+                     </form>
         </div>
         </section>
 
         <section class="page" id="comppage">
-            <h3> Famous Composers </h3>
-         </section>
+            
+            <h2> Famous Composers </h2>
+             <div id="compbtnsection"> <!-- COMPOSER BUTTONS -->
+                <button class="compbtn" id="mozartbtn">Mozart</button>
+                <button class="compbtn" id="bachbtn">Bach</button>
+                <button class="compbtn" id="chopinbtn">Chopin</button>
+            </div>
+
+            <div id="composercontent">
+                 
+                <div id="mozartc">
+                    <h3>Wolfgang Amadeus Mozart</h3>
+                    <img src="Images/mozart.jpg" alt="mozart" id="mozartimg">
+                    <p><strong>1756 - 1791</strong></p>
+                    <p> Wolfgang Amadeus Mozart was an Austrian composer of the Classical era. As a child prodigy, he began composing music at the age of 5 and composed more than 600 works. His music is admired for it's balance, elegance and beauty.</p>
+                    <h4>Famous Works</h4>
+                        <ul>
+                            <li>Eine kleine Nachtmusik</li>
+                            <li> Requiem in D Minor </li>
+                            <li>Symphony No. 40</li>
+                        </ul>
+                </div>
+
+                <div id="bachc">
+                    <h3>Johann Sebastian Bach</h3>
+                     <img src="Images/bach.jpg" alt="bach" id="bachimg">
+                    <p><strong>1685 - 1750</strong></p>
+                    <p> Johann Sebastian Bach was a German composer during the Baroque era. He is regarded as one of the greatest composers in history because of his complex harmonies. Although he was not widely famous during his lifetime, his music later became highly influential.</p>
+                    <h4>Famous Works</h4>
+                        <ul>
+                            <li>Brandenburg Concertos</li>
+                            <li>Toccata and Fugue in D Minor</li>
+                            <li>Air on the G String</li>
+                        </ul>
+                </div>
+
+                <div id="chopinc">
+                    <h3>Frédéric Chopin</h3>
+                    <img src="Images/chopin.jpg" alt="chopin" id="chopinimg">
+                    <p><strong>1810 - 1849</strong></p>
+                    <p> Frédéric Chopin was a Polish composer and pianist during the Romantic era.. He composed almost exclusively for the piano, creating expressive and emotional works. </p>
+                    <h4>Famous Works</h4>
+                        <ul>
+                            <li>Ballade No. 1 in G Minor</li>
+                            <li>Nocturne Op. 9 No. 2</li>
+                            <li>Fantaisie-Impromptu</li>
+                        </ul>
+                </div>
+
+            </div>
+        </section>
 
         <section class="page" id="trackspage">
-            <h3> Classical Tracks</h3>
+            <h2> Recommended Classical Tracks</h2>
+            <p>Take a listen to these 3 famous and reccomended pieces , <strong>Also try out the rhythm tester below just press a or d when it hits the red zone while listening to the music.</strong>  </p>
+
+            <audio id="player"></audio>
+
+            <p id="nowplaying"> Now Playing : None  </p> 
+
+            <div class="trackinfo">
+                <h3>Canon in D</h3>
+                <p><strong> Composer : Johann Pachelbel</strong></p>
+                <button id="canonplay"> Play </button>
+                <button class="pausemusic"> Pause</button>
+            </div>
+
+            <div class="trackinfo">
+                <h3>Symphony no.5 IV. Allegro </h3>
+                <p><strong> Composer : Ludwig van Beethoven <strong></p>
+                <button id="fiveplay"> Play </button>
+                <button class="pausemusic"> Pause</button>
+            </div>
+
+            <div class="trackinfo">
+                <h3>Ballade no.1 in G minor </h3>
+                <p><strong> Composer : Frédéric Chopin  <strong></p>
+                <button id="gplay"> Play </button>
+                <button class="pausemusic"> Pause</button>
+            </div>
+            <h3 id="rgh">Rhythm Tester</h3>
+            <p id="rgp">Click play on one of the tracks and press on a and d when the note hits the red line</p>
+            <section id="rhythmgame">
+                <div id="game"> <!-- rhythm game -->
+                    <div id="note"></div>  
+                    <div id = "hitzone"></div>
+                    <p id="RGscore"> score : 0</p>
+                    <p id="judgement"></p>
+                </div>
+                <div id="mobilebutton">
+                        <button id="hitleft">Hit</button>
+                        <button id = "hitright">Hit</button>
+                </div>
+            </section>
+
+
          </section>
             
 
