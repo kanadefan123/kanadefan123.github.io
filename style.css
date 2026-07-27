@@ -335,7 +335,7 @@ summary {
 
 #confetti{
 
-    background-image:url(images/confetti.png);
+    background-image:url(images/Confetti.png);
     width:512px; /* sets sprite sheet width to 512 px */
     height:512px; /* sets sprite sheet height to 512 px to make like crop one frame*/
     position:absolute; /* can appear over the results */
