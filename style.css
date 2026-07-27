@@ -397,12 +397,12 @@ summary {
     text-shadow:  0 0 5px rgba(255,255,255,.7), 0 0 10px rgba(212,175,55,.5); /* yellow glow to make the text glow */  /* 10px is the glow radius giving it a blur/glow */
 }
 
-#comppage h2, #comppage h3{
+#comppage h2, #composercontent h3{
     color:#ffda62;
     text-shadow:
     0 0 5px rgba(255,255,255,.7), 0 0 10px rgba(212,175,55,.5); /* yellow glow to make the text glow */  /* 10px is the glow radius giving it a blur/glow */
     font-size:60px;
-    font-family: gslightob;
+    font-family: gslight;
 }
 
 #composercontent ul{
